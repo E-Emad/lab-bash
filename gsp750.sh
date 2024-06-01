@@ -124,7 +124,12 @@ terraform apply --auto-approve
 
 
 
+sleep 120
+
+
 rm main.tf
+
+touch main.tf
 
 cat  > main.tf <<EOF
 terraform {
@@ -170,7 +175,12 @@ terraform destroy --auto-approve
 
 
 
+sleep 120
+
+
 rm main.tf
+
+touch main.tf
 
 cat  > main.tf <<EOF
 terraform {
@@ -214,7 +224,12 @@ EOF
 
 terraform plan
 
+sleep 120
+
+
 rm main.tf
+
+touch main.tf
 
 cat  > main.tf <<EOF
 terraform {
@@ -261,7 +276,12 @@ terraform plan -out static_ip
 
 terraform apply "static_ip"
 
+sleep 120
+
+
 rm main.tf
+
+touch main.tf
 
 cat  > main.tf <<EOF
 terraform {
