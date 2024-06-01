@@ -75,7 +75,12 @@ terraform apply --auto-approve
 
 
 
+sleep 120
+
+
 rm main.tf
+
+touch main.tf
 
 cat  > main.tf <<EOF
 terraform {
