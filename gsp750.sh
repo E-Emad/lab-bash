@@ -29,6 +29,7 @@ EOF
 terraform init
 terraform apply --auto-approve
 
+sleep 120
 
 rm main.tf
 
